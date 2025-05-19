@@ -1,12 +1,121 @@
-*{
-    margin : 0;
+* {
+    margin: 0;
     padding: 0;
-}
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
 
-body{
-    background-color: red;
-}
+body {
+    background-color: #1e1e2f;
+    color: white;
+  }
 
 h1{
     color: red;
 }
+
+/* Navbar */
+  
+  .main_box {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+  }
+  
+  #check {
+    display: none;
+  }
+  
+  /* Button to open sidebar */
+  .btn_one {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 2;
+  }
+  
+  /* Sidebar styles */
+  .sidebar_menu {
+    position: fixed;
+    left: -300px;
+    top: 0;
+    width: 300px;
+    height: 100%;
+    background: #11101d;
+    transition: all 0.5s ease;
+    z-index: 1;
+    padding: 20px 0;
+  }
+  
+  /* Checkbox checked - slide in menu */
+  #check:checked ~ .sidebar_menu {
+    left: 0;
+  }
+  
+  /* Button to close sidebar */
+  .btn_two {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  /* Logo */
+  .logo {
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 30px;
+  }
+  
+  .logo a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+  }
+  
+  /* Menu list */
+  .menu {
+    padding-left: 30px;
+  }
+  
+  .menu ul li {
+    list-style: none;
+    margin: 20px 0;
+    font-size: 18px;
+  }
+  
+  .menu ul li i {
+    margin-right: 10px;
+  }
+  
+  .menu ul li a {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+  }
+  
+  .menu ul li a:hover {
+    color: #f39c12;
+  }
+  
+  /* Social media links */
+  .social_media {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+  }
+  
+  .social_media a {
+    margin-right: 15px;
+    color: white;
+    font-size: 20px;
+    transition: 0.3s;
+  }
+  
+  .social_media a:hover {
+    color: #f39c12;
+  }
+  
